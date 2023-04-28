@@ -1,0 +1,76 @@
+.contenedor{
+    border: 1px solid;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+}
+
+.padre{
+    margin-top: 15px;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    width: 800px;
+    /* align-items: center; */
+    height: 700px;
+}
+.logo{
+    margin-top: 20px;
+    border: 1px solid green;
+    display: flex;
+    justify-content:space-around;
+}
+.logo>img{
+    width: 250px;
+    height: 200px;
+}
+
+.Hijo{
+    border: 2px solid rgb(255, 115, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 100px;
+}
+.caja{
+    border: 2px solid rgb(255, 174, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 50px;
+
+}
+.botones{
+    border: 2px solid blueviolet;
+    display: flex;
+    width: 500px;
+    height: 400px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+   
+}
+.boton1,.boton2{
+    border: 1px solid blue;
+    width: 500px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.iconos{
+    width: 100px;
+    height: 100px;
+
+}
+.boton{
+    background-color: rgb(75, 75, 75);
+    width: 300px;
+    height: 50px;
+    cursor: pointer;
+}

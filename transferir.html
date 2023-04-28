@@ -1,77 +1,64 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Transferir</title>
-    <link rel="stylesheet" href="./css/estilo4.css">
-  </head>
-  <body>
-    <header>
-      <section class="logo">
-        <img src="./img/Captura.PNG" alt="" />
-      </section>
-    </header>
-    <main>
-      <section class="contenedor">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Transferir</title>
+  <link rel="stylesheet" href="./css/transferir.css">
+</head>
+
+<body>
+  <header>
+    <section class="logo">
+      <img src="./img/Captura.PNG" alt="" />
+    </section>
+  </header>
+  <main>
+    <section class="contenedor">
         <section class="padre">
-          <section class="hijo">
-            <section class="cajas">
-                <section class="caja1">
-                    <form action="">
-                  <input
-                    type="text"
-                    name="Nombre"
-                    id="Nombre"
-                    placeholder="Nombre de Quien Recibe"
-                  />
-                  <input
-                    type="tel"
-                    name="Numero"
-                    id="Numero"
-                    placeholder="Numero De Cuenta"
-                  />
-                  <select id="Tipo Banco" name="Tipo Banco">
-                    <option value="Banco">Banco</option>
-                    <option value="Bancolombia">Bancolombia</option>
-                    <option value="Nequi">Nequi</option>
-                    <option value="Davivienda">Davivienda</option>
-                    <option value="BBVA">BBVA</option>
-                  </select>
-                </form>
-                </section>
-                <section class="caja2">
-                    <form action="">
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="Correo Electronico"
-                  />
-                  <select id="Tipo Cuenta" name="Tipo Cueta">
+            <section class="hijo">
+              <h2>TRANSFERENCIA</h2>
+              <section class="cajas">
+              <form id="miFormulario"  action="/procesar-formulario" method="POST">
+                  <label for="retirar">Nombre Quien Recibe</label>
+                  <input type="text" id="nombre" class="Usuario" name="nombre" placeholder="Valor A Retirar">
+                  <label for="retirar">Numero Cuenta</label>
+                  <input type="text" id="nombre" class="Usuario" name="nombre" placeholder="Valor A Retirar">
+    
+                  <label for="Tipo de cuenta">Seleccione Tipo de Cuenta</label>
+                  <select id="Tipo Cuenta" class="tipocuenta" name="Tipo Cuenta">
                     <option value="Ahorros">Elige</option>
                     <option value="Ahorros">Ahorros</option>
                     <option value="Corriente">Corriente</option>
                     <option value="Con Chequera">Con Chequera</option>
                     <option value="Dolares">Dolares</option>
                   </select>
-                  <input
-                    type="tel"
-                    name="Numero"
-                    id="Numero"
-                    placeholder="Monto a Transferir"
-                  />
                 </form>
-                </section>
-                <section class="boton">
-                    <button>Cerrar Sesión</button>
-                    <button>Consignar</button>
-                </section>
+                <form id="miFormulario"  action="/procesar-formulario" method="POST">
+                  <label for="retirar">correo</label>
+                  <input type="text" id="nombre" class="Usuario" name="nombre" placeholder="Valor A Retirar">
+                  <label for="Tipo de cuenta">Seleccione Tipo de Cuenta</label>
+                  <select id="Tipo Cuenta" class="tipocuenta" name="Tipo Cuenta">
+                    <option value="Ahorros">Elige</option>
+                    <option value="Ahorros">Ahorros</option>
+                    <option value="Corriente">Corriente</option>
+                    <option value="Con Chequera">Con Chequera</option>
+                    <option value="Dolares">Dolares</option>
+                  </select>
+                  <label for="retirar">Monto</label>
+                  <input type="text" id="nombre" class="Usuario" name="nombre" placeholder="Valor A Retirar">
+    
+                </form>
+              </section>
+                <section class="botones">
+                  <a href="./Inicio.html"><input type="button" class="boton" value="Regresar"></a>
+                <a href="#"><input type="button" class="boton" value="Transferir"></a>
+              </section>
             </section>
-          </section>
         </section>
-      </section>
-    </main>
-  </body>
-  
+    </section>
+</main>
+</body>
+
 </html>

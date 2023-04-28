@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Consignar Saldo</title>
-    <link rel="stylesheet" href="./css/estilo3.css" />
+    <link rel="stylesheet" href="./css/consignar.css" />
   </head>
   <body>
     <header>
@@ -16,12 +16,13 @@
       <section class="contenedor">
         <section class="padre">
           <section class="hijo">
-            <form action="">
+            <h2>CONSIGNAR</h2>
+            <form id="miFormulario"  action="/procesar-formulario" method="POST">
                 <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" />
+                <input type="text" class="barras" id="nombre" name="nombre" />
   
                 <label for="Tipo de cuenta">Seleccione Tipo de Cuenta</label>
-                <select id="Tipo Cuenta" name="Tipo Cuenta">
+                <select id="Tipo Cuenta" class="barras" name="Tipo Cuenta">
                   <option value="Ahorros">Elige</option>
                   <option value="Ahorros">Ahorros</option>
                   <option value="Corriente">Corriente</option>
@@ -29,19 +30,21 @@
                   <option value="Dolares">Dolares</option>
                 </select>
   
-                <label for="Tipo de Pago">Seleccione Tipo de Pago</label>
-                <select id="Tipo Pago" name="Tipo Pago">
+                <label for="Tipo de Pago">Seleccione Tipo de Banco</label>
+                <select id="Tipo Pago" class="barras" name="Tipo Pago">
                   <option value="Ahorros">Elige</option>
-                  <option value="Efectivo">Efectivo</option>
-                  <option value="Credito">Credito</option>
+                  <option value="Efectivo">Bancolombia</option>
+                  <option value="Credito">Nequi</option>
+                  <option value="Credito">Davivienda</option>
+                  <option value="Credito">BBVA</option>
                 </select>
   
                 <label for="Valor a Consignar">Valor a Consignar $</label>
-                <input type="text" name="Valor" id="Valor" />
+                <input type="number" class="barras" name="Valor" id="Valor" />
               </form>
-              <section class="boton">
-                <button>Cerrar Sesión</button>
-                <button>Consignar</button>
+              <section class="botones">
+                <a href="./Inicio.html"><input type="button" class="boton" value="Regresar"></a>
+              <a href="#"><input type="button" class="boton" value="Consignar"></a>
             </section>
           </section>
         </section>

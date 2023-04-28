@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RETIROS</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./css/retirar.css">
 </head>
 <body>
     <header>
@@ -16,12 +16,13 @@
         <section class="contenedor">
             <section class="padre">
                 <section class="hijo">
-                  <form action="">
-                      <label for="nombre"></label>
-                      <input type="text" id="nombre" name="nombre" placeholder="Valor A Retirar">
+                  <h2>RETIROS</h2>
+                  <form id="miFormulario"  action="/procesar-formulario" method="POST">
+                      <label for="retirar">Valor a Retirar</label>
+                      <input type="text" id="nombre" class="Usuario" name="nombre" placeholder="Valor A Retirar">
         
                       <label for="Tipo de cuenta">Seleccione Tipo de Cuenta</label>
-                      <select id="Tipo Cuenta" name="Tipo Cuenta">
+                      <select id="Tipo Cuenta" class="tipocuenta" name="Tipo Cuenta">
                         <option value="Ahorros">Elige</option>
                         <option value="Ahorros">Ahorros</option>
                         <option value="Corriente">Corriente</option>
@@ -29,9 +30,11 @@
                         <option value="Dolares">Dolares</option>
                       </select>
                     </form>
-                    <section class="boton">
-                      <button>Cerrar Sesión</button>
-                      <button>Consignar</button>
+                    <section class="botones">
+                      <section class="botones">
+                        <a href="./Inicio.html"><input type="button" class="boton" value="Regresar"></a>
+                      <a href="#"><input type="button" class="boton" value="Retirar"></a>
+                    </section>
                   </section>
                 </section>
             </section>

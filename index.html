@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="./css/inicio.css">
     <link rel="icon" href="./img/icono1.PNG">
     <title>INICIO</title>
 </head>
@@ -15,12 +15,14 @@
                     <img src="./img/logo1.PNG" alt="">
                 </section>
                 <section class="datos">
-                    <form id="miFormulario" class="form" action="/procesar-formulario" method="POST">
-                        <input type="text" name="Usuario" id="Usuario" placeholder="USUARIO">
-                        <input type="password" name="password" id="password" placeholder="CLAVE">
+                    <form id="miFormulario"  action="/procesar-formulario" method="POST">
+                        <label for="Usuario">Ingrese Usuario</label>
+                        <input type="text" class="usuario" name="Usuario" id="Usuario" placeholder="USUARIO">
+                        <label for="password">Ingrese Contraseña</label>
+                        <input type="password" class="password" name="password" id="password" placeholder="CLAVE">
                       </form>
                       <a href="Inicio.html">
-                      <input type="button"  value="INGRESAR"></a>
+                      <input type="button" class="boton" value="INGRESAR"></a>
                 </section>
             </section>
         </section>
