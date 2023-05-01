@@ -1,5 +1,5 @@
 *{
-    color: aliceblue;
+    color: rgb(0, 0, 0);
     font-family: 'Noto Sans', sans-serif;
 
 }
@@ -10,7 +10,8 @@
     height: 100%;
     background-image: url(../img/banner.PNG);
     /* padding: 25%; */
-    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: top center;
     background-attachment: fixed;
     position: relative;
@@ -42,7 +43,7 @@ menu{
 }
     
 .padre{
-    background-color: brown;
+    background-color: #F2F2F2;
     margin-top: 10px;
     border-radius: 5px;
     display: flex;
@@ -89,7 +90,8 @@ menu{
 
 }
 .boton{
-    background-color: rgb(9, 231, 176);
+    background-color: #D3F263;
+    border: solid #A7BF4E;
     border-radius: 6px;
     width: 300px;
     height: 50px;

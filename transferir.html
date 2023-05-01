@@ -6,12 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Transferir</title>
   <link rel="stylesheet" href="./css/transferir.css">
+  <link rel="icon" href="./img/icono1.PNG">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header>
     <section class="logo">
-      <img src="./img/Captura.PNG" alt="" />
+      <img src="./img/Captura-removebg-preview.png" alt="" />
     </section>
   </header>
   <main>
@@ -26,13 +30,13 @@
                   <label for="retirar">Numero Cuenta</label>
                   <input type="text" id="nombre" class="Usuario" name="nombre" placeholder="Valor A Retirar">
     
-                  <label for="Tipo de cuenta">Seleccione Tipo de Cuenta</label>
+                  <label for="Tipo de cuenta">Seleccione Tipo de Banco</label>
                   <select id="Tipo Cuenta" class="tipocuenta" name="Tipo Cuenta">
                     <option value="Ahorros">Elige</option>
-                    <option value="Ahorros">Ahorros</option>
-                    <option value="Corriente">Corriente</option>
-                    <option value="Con Chequera">Con Chequera</option>
-                    <option value="Dolares">Dolares</option>
+                    <option value="Ahorros">Bancolombia</option>
+                    <option value="Corriente">Nequi</option>
+                    <option value="Con Chequera">BBVA</option>
+                    <option value="Dolares">Davivienda</option>
                   </select>
                 </form>
                 <form id="miFormulario"  action="/procesar-formulario" method="POST">
